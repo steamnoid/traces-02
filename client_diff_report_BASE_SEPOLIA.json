@@ -1,0 +1,405 @@
+# Client Diff Report
+
+Generated: 2025-12-25T09:34:44.435Z
+
+## Summary
+- REF: https://eth-sepolia.g.alchemy.com/v2/wTYnccIW9DN1QL1j8xGpP (AVAILABLE)
+- TRGT: https://base-sepolia.g.alchemy.com/v2/wTYnccIW9DN1QL1j8xGpP (AVAILABLE)
+- Transactions executed (REF): 141
+- Transactions executed (TRGT): 141
+- Findings: 228
+- Bug clusters: 7
+
+## Deployments
+- REF token: 0xe665c857e53baceB0E9b7d5b1dc7c875c66BB32E (tx 0x3a5352ee4639f7d582bd789b9e0de89ce5e03a5732a4a297ff9cba5a0f837dac)
+- TRGT token: 0xAA449424d45E0B6fa3F92BAAE25E4c8252D193bB (tx 0xd76ee524c2bfa32938e36f347559b4c41247d469c8d4847fd4d46d6e0847740d)
+
+## Findings (by severity)
+### CRITICAL
+- [v3_approve_oscillate_0] success_mismatch: Success mismatch: ref=SUCCESS trgt=REVERT
+- [v3_approve_oscillate_0] receipt-level non-determinism (CRITICAL): Log count differs: REF=1 TRGT=0
+
+### HIGH
+- [deploy_receiver] storage_diff_mismatch: Prestate diff differs (16 diffs)
+- [deploy_token] storage_diff_mismatch: Prestate diff differs (16 diffs)
+- [setup_mint_more] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_approve_then_revoke_then_transferFrom] state_mismatch: Post-state differs (1 diffs)
+- [v3_transfer_low_gas] state_mismatch: Post-state differs (1 diffs)
+- [v3_transfer_to_self] state_mismatch: Post-state differs (1 diffs)
+- [v3_transfer_to_self] storage_diff_mismatch: Prestate diff differs (14 diffs)
+- [v3_burn_mint_burn_sequence] state_mismatch: Post-state differs (1 diffs)
+- [v3_burn_mint_burn_sequence] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_approve_oscillate_0] state_mismatch: Post-state differs (1 diffs)
+- [v3_approve_oscillate_0] storage_diff_mismatch: Prestate diff differs (12 diffs)
+- [v3_approve_oscillate_1] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_approve_oscillate_2] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_approve_oscillate_4] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_approve_oscillate_5] state_mismatch: Post-state differs (1 diffs)
+- [v3_approve_oscillate_6] state_mismatch: Post-state differs (1 diffs)
+- [v3_approve_oscillate_7] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_approve_oscillate_8] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_approve_oscillate_9] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_approve_oscillate_10] state_mismatch: Post-state differs (1 diffs)
+- [v3_approve_oscillate_11] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_approve_oscillate_12] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_approve_oscillate_13] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_approve_oscillate_14] state_mismatch: Post-state differs (1 diffs)
+- [v3_approve_oscillate_15] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_approve_oscillate_16] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_approve_oscillate_17] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_approve_oscillate_18] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_approve_oscillate_19] state_mismatch: Post-state differs (1 diffs)
+- [v3_approve_oscillate_20] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_approve_oscillate_21] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_approve_oscillate_22] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_approve_oscillate_23] state_mismatch: Post-state differs (1 diffs)
+- [v3_approve_oscillate_24] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_mint_to_contract_then_transfer] receipt-level non-determinism (HIGH): Event Transfer arg to differs at index 0: 0xa7282E7D04A0944BA320768eb054249a3868D08C != 0xe9c40837b429174c094B55F1d0333275958A858B
+- [v3_mint_to_contract_then_transfer] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_sequence_large_flow] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_transfer_balance_exact] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_transfer_balance_minus_one] storage_diff_mismatch: Prestate diff differs (14 diffs)
+- [v3_small_transfer_0] storage_diff_mismatch: Prestate diff differs (14 diffs)
+- [v3_small_transfer_3] storage_diff_mismatch: Prestate diff differs (14 diffs)
+- [v3_small_transfer_6] storage_diff_mismatch: Prestate diff differs (14 diffs)
+- [v3_small_transfer_9] storage_diff_mismatch: Prestate diff differs (14 diffs)
+- [v3_small_transfer_12] storage_diff_mismatch: Prestate diff differs (14 diffs)
+- [v3_small_transfer_15] storage_diff_mismatch: Prestate diff differs (14 diffs)
+- [v3_small_transfer_24] storage_diff_mismatch: Prestate diff differs (14 diffs)
+- [v3_small_transfer_30] storage_diff_mismatch: Prestate diff differs (14 diffs)
+- [v3_small_transfer_33] storage_diff_mismatch: Prestate diff differs (14 diffs)
+- [v3_small_transfer_36] storage_diff_mismatch: Prestate diff differs (14 diffs)
+- [v3_interleave_multi] state_mismatch: Post-state differs (1 diffs)
+- [v3_abuse_1_transfer_250] state_mismatch: Post-state differs (1 diffs)
+- [v3_abuse_5_approve_256] state_mismatch: Post-state differs (1 diffs)
+- [v3_abuse_6_transferFrom_164] state_mismatch: Post-state differs (1 diffs)
+- [v3_abuse_8_mint_53] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_9_mint_212] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_10_burn_54] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_11_transfer_211] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_12_approve_116] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_20_mint_216] state_mismatch: Post-state differs (2 diffs)
+- [v3_abuse_22_approve_127] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_23_approve_157] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_24_mint_106] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_26_transferFrom_32] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_27_mint_70] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_28_transfer_18] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_29_approve_89] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_30_mint_150] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_31_transfer_193] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_32_mint_248] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_33_approve_104] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_35_burn_240] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_36_burn_159] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_37_mint_101] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_38_transferFrom_62] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_39_transfer_31] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_42_transfer_58] storage_diff_mismatch: Prestate diff differs (14 diffs)
+- [v3_abuse_43_mint_98] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_44_mint_180] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_45_burn_196] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_46_mint_104] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_47_mint_78] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_48_burn_16] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_49_transferFrom_74] state_mismatch: Post-state differs (3 diffs)
+- [v3_abuse_50_approve_182] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_53_mint_87] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_54_transfer_167] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_55_burn_133] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_56_burn_158] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_57_approve_140] storage_diff_mismatch: Prestate diff differs (18 diffs)
+- [v3_abuse_58_mint_235] state_mismatch: Post-state differs (2 diffs)
+- [v3_abuse_60_approve_14] storage_diff_mismatch: Prestate diff differs (18 diffs)
+
+### MEDIUM
+- [deploy_token] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [setup_mint_more] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_transfer_to_self] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_burn_mint_burn_sequence] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_approve_oscillate_1] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_approve_oscillate_2] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_approve_oscillate_3] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_approve_oscillate_4] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_approve_oscillate_5] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_approve_oscillate_6] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_approve_oscillate_7] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_approve_oscillate_8] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_approve_oscillate_9] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_approve_oscillate_10] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_approve_oscillate_11] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_approve_oscillate_12] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_approve_oscillate_13] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_approve_oscillate_14] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_approve_oscillate_15] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_approve_oscillate_16] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_approve_oscillate_17] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_approve_oscillate_18] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_approve_oscillate_19] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_approve_oscillate_20] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_approve_oscillate_21] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_approve_oscillate_22] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_approve_oscillate_23] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_approve_oscillate_24] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_sequence_large_flow] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_transfer_balance_exact] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_transfer_balance_minus_one] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_small_transfer_0] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_small_transfer_3] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_small_transfer_6] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_small_transfer_9] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_small_transfer_12] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_small_transfer_15] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_small_transfer_18] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_small_transfer_21] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_small_transfer_24] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_small_transfer_27] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_small_transfer_30] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_small_transfer_33] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_small_transfer_36] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_small_transfer_39] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_5_approve_256] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_8_mint_53] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_9_mint_212] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_10_burn_54] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_11_transfer_211] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_12_approve_116] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_14_approve_112] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_20_mint_216] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_22_approve_127] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_23_approve_157] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_24_mint_106] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_26_transferFrom_32] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_27_mint_70] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_28_transfer_18] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_29_approve_89] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_30_mint_150] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_31_transfer_193] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_32_mint_248] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_33_approve_104] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_34_approve_160] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_35_burn_240] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_36_burn_159] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_37_mint_101] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_38_transferFrom_62] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_39_transfer_31] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_42_transfer_58] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_43_mint_98] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_44_mint_180] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_45_burn_196] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_46_mint_104] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_47_mint_78] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_48_burn_16] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_49_transferFrom_74] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_50_approve_182] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_51_mint_169] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_52_approve_226] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_53_mint_87] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_54_transfer_167] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_55_burn_133] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_56_burn_158] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_57_approve_140] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_58_mint_235] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_59_burn_98] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+- [v3_abuse_60_approve_14] receipt-level non-determinism (MEDIUM): Event address differs at index 0
+
+### LOW
+- None
+
+### EXPECTED
+- [deploy_token] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_transfer_to_self] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_approve_oscillate_0] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_approve_oscillate_3] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_approve_oscillate_5] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_approve_oscillate_6] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_approve_oscillate_10] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_approve_oscillate_11] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_approve_oscillate_13] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_approve_oscillate_14] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_approve_oscillate_15] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_approve_oscillate_18] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_approve_oscillate_19] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_approve_oscillate_21] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_approve_oscillate_23] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_mint_to_contract_then_transfer] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_small_transfer_18] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_small_transfer_21] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_small_transfer_27] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_small_transfer_36] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_small_transfer_39] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_abuse_5_approve_256] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_abuse_10_burn_54] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_abuse_14_approve_112] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_abuse_20_mint_216] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_abuse_26_transferFrom_32] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_abuse_27_mint_70] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_abuse_28_transfer_18] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_abuse_34_approve_160] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_abuse_35_burn_240] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_abuse_36_burn_159] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_abuse_37_mint_101] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_abuse_39_transfer_31] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_abuse_42_transfer_58] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_abuse_43_mint_98] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_abuse_45_burn_196] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_abuse_46_mint_104] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_abuse_47_mint_78] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_abuse_49_transferFrom_74] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_abuse_51_mint_169] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_abuse_52_approve_226] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_abuse_53_mint_87] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_abuse_54_transfer_167] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_abuse_56_burn_158] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_abuse_58_mint_235] trace_unavailable: Opcode trace unavailable on at least one client
+- [v3_abuse_59_burn_98] trace_unavailable: Opcode trace unavailable on at least one client
+
+## Bug Clusters
+### BUG-001 — CRITICAL — EXECUTION-MISMATCH
+- Signature: {"findingType":"log_mismatch","divergenceSig":null}
+- Scores: impact=5, exploitability=4, detectability=2, final=40
+- Affected scope: EVM execution, ERC20
+- Potential impact: unknown
+- Affected transactions:
+  - v3_approve_oscillate_0 | ref=0x8fea1159f46079534f91f9dc4475958b4078795abab7c008d5e8e18b2c36cb02 | trgt=0xbd21edcf6e7bc45bc936ee043abbc5a3f25372412a6e97f9180cc4a5c9e3ffe2
+
+### BUG-002 — CRITICAL — REVERT-DESYNC
+- Signature: {"findingType":"success_mismatch","divergenceSig":null}
+- Scores: impact=5, exploitability=4, detectability=2, final=40
+- Affected scope: EVM execution, ERC20
+- Potential impact: stuck funds
+- Affected transactions:
+  - v3_approve_oscillate_0 | ref=0x8fea1159f46079534f91f9dc4475958b4078795abab7c008d5e8e18b2c36cb02 | trgt=0xbd21edcf6e7bc45bc936ee043abbc5a3f25372412a6e97f9180cc4a5c9e3ffe2
+
+### BUG-003 — HIGH — EXECUTION-MISMATCH
+- Signature: {"findingType":"log_mismatch","divergenceSig":null}
+- Scores: impact=4, exploitability=2, detectability=2, final=16
+- Affected scope: EVM execution, ERC20
+- Potential impact: unknown
+- Affected transactions:
+  - v3_mint_to_contract_then_transfer | ref=0xfd7e50bb462d1dfabbf7b1a5684cf6c787ae141eb8b87b9bded497f738f8d3ef | trgt=0x1806b18c397d164af0ddfccc1f105fd3f2e1d41f20f8958579e6cdb489d815f2
+
+### BUG-004 — HIGH — STORAGE-CORRUPTION
+- Signature: {"findingType":"state_mismatch","divergenceSig":null}
+- Scores: impact=4, exploitability=2, detectability=3, final=24
+- Affected scope: EVM execution, ERC20
+- Potential impact: fund loss
+- Affected transactions:
+  - v3_approve_then_revoke_then_transferFrom | ref=N/A | trgt=N/A
+  - v3_transfer_low_gas | ref=N/A | trgt=N/A
+  - v3_transfer_to_self | ref=0x804d52766fddbe1c59755c1c577384492103859f8bc25a6cc116026dbcdfc104 | trgt=0xea253c077411250c0d97b5224d879b1932b7addd381c341c71c001b80394afe6
+  - v3_burn_mint_burn_sequence | ref=0xca3a4d7442371147d76a4989e910af97b9b4b5cc659e42c25816b0b4240c68cf | trgt=0xcaa988170df0ada74aa7001e25abd5bad1da1837280a16feabba307e6a1f85d9
+  - v3_approve_oscillate_0 | ref=0x8fea1159f46079534f91f9dc4475958b4078795abab7c008d5e8e18b2c36cb02 | trgt=0xbd21edcf6e7bc45bc936ee043abbc5a3f25372412a6e97f9180cc4a5c9e3ffe2
+  - v3_approve_oscillate_5 | ref=0x24105b95525723a834a296b2e47a72c317b453a07ee5674e22c8a3d84705909f | trgt=0x9d0551b2c9dd67f3adaac16f1f992029f2f1d8a6f4d5ff28f0ecb78d204035db
+  - v3_approve_oscillate_6 | ref=0x648369052119172a03157898cb21afdb2ec8c142e4865c1b367da82b0a51e937 | trgt=0x87e134603031a1192d0f8d805e7aab9bc69b5dcc1c5d51f042d17701ef80571b
+  - v3_approve_oscillate_10 | ref=0x988594d5b88a1f023df9dbf2956a8d62738c0723641051f30d997df1260a02c4 | trgt=0x32417939ff372feb345a0677b1fbdb93a03da43e8d9d1eea969660645fe8c4d8
+  - v3_approve_oscillate_14 | ref=0x03a06e2d580ab1cea89cfe5d808c41f3ff3ee7851d4466c7a90da438d128bb84 | trgt=0x65a336c897f65b48d4e6a0d88adc12baac0cc4b0a173054193a718c1c823225f
+  - v3_approve_oscillate_19 | ref=0x0d5b69e9e3164f90aaf3dca3dc36683d8e96fa6e034610b8796922473eab2b21 | trgt=0xae86897cf514de34f92a349b967f2520285eddc62b7e2df9162787d16f077643
+  - v3_approve_oscillate_23 | ref=0x52761e461fd58a71c63db6d8eaba90f351d6e74c93386efef9bd4680766c30d4 | trgt=0x2ce29bf29968b03fe1c2199fa6a5f3481e01cff7830b61ddac48cb0381f2868e
+  - v3_interleave_multi | ref=N/A | trgt=N/A
+  - v3_abuse_1_transfer_250 | ref=N/A | trgt=N/A
+  - v3_abuse_5_approve_256 | ref=0x229c99398676260f86a1b4e5c38280f078049c7dbcefdc87235ee65fd1e9530d | trgt=0xfea1170e9f5da956e56786ab832743e2f0572dc5a16eb07a8196986043b3e7b6
+  - v3_abuse_6_transferFrom_164 | ref=N/A | trgt=N/A
+  - v3_abuse_20_mint_216 | ref=0x390937b82709340fb48eae7eb092c2aa5ac53ea44f692cbc6649aab9722985b7 | trgt=0x7451e713a7f0e7a36e9928fad9699404e9913a5e386476205a695890782a52df
+  - v3_abuse_49_transferFrom_74 | ref=0x9e039fe1e534dc543c1f85e5b13a3985fd270a5b313385ccbba9105a000fef60 | trgt=0x4c31e42226ba57685cf53dcef69fecc8c4562e64936d456806506d24019d7e5b
+  - v3_abuse_58_mint_235 | ref=0xdd5b23ae5d373a35cffcd4c409d2e5ef29594c092b9a31da000abbf580c6a5ce | trgt=0xc161a9e96dee5ac1b205025d888a1069ddb6e0b47e158301103afb8f2f83d583
+
+### BUG-005 — HIGH — STORAGE-CORRUPTION
+- Signature: {"findingType":"storage_diff_mismatch","divergenceSig":null}
+- Scores: impact=4, exploitability=2, detectability=5, final=40
+- Affected scope: EVM execution, ERC20
+- Potential impact: fund loss
+- Affected transactions:
+  - deploy_receiver | ref=0x0dc8af07bfe8e1cec3013dd920a2b3933a4fb8f0578272b4fb223ddbfc65a7ec | trgt=0xd47be913907e0736fbe91328e09b04ccce1a24e38d4da0ed11d0db7fb8f2517a
+  - deploy_token | ref=0x3a5352ee4639f7d582bd789b9e0de89ce5e03a5732a4a297ff9cba5a0f837dac | trgt=0xd76ee524c2bfa32938e36f347559b4c41247d469c8d4847fd4d46d6e0847740d
+  - setup_mint_more | ref=0xd6a1dbff00e64df92d8338e56e77d1f451dab83a61dd02f1c683186a878b86e6 | trgt=0xc8daa07728a9339f06392e19045a68a873a1a8b276ab3b75019500baae74d13a
+  - v3_transfer_to_self | ref=0x804d52766fddbe1c59755c1c577384492103859f8bc25a6cc116026dbcdfc104 | trgt=0xea253c077411250c0d97b5224d879b1932b7addd381c341c71c001b80394afe6
+  - v3_burn_mint_burn_sequence | ref=0xca3a4d7442371147d76a4989e910af97b9b4b5cc659e42c25816b0b4240c68cf | trgt=0xcaa988170df0ada74aa7001e25abd5bad1da1837280a16feabba307e6a1f85d9
+  - v3_approve_oscillate_0 | ref=0x8fea1159f46079534f91f9dc4475958b4078795abab7c008d5e8e18b2c36cb02 | trgt=0xbd21edcf6e7bc45bc936ee043abbc5a3f25372412a6e97f9180cc4a5c9e3ffe2
+  - v3_approve_oscillate_1 | ref=0x3fe45d5a4e1061cda4201a7ecbb84de700420e380082eab22e7ace9518b4eff6 | trgt=0x4c3344eeec03ce54dae47d6befa620dd9b10115c636bfd880a80abb64a29ce6c
+  - v3_approve_oscillate_2 | ref=0xf77d59cc6361727ee9f8560e76067bcfbb9bdcc59ec56de0ee71648b15877511 | trgt=0xf86fa9707834aece0ca5b4c406e12bc85f401479be28b658c71bf23990ec19c3
+  - v3_approve_oscillate_4 | ref=0x2aafaabc6437896e8be208d4801bd41a7cae846a8215cb3f806a81a517a56614 | trgt=0xc7861cd1d21735dc37f1ea483cf69d7ef60c31772883accce1aa0ed34f08b6d7
+  - v3_approve_oscillate_7 | ref=0x2d35a2e836a26f8a8bc321fee2d75fad6f26f3b969161cc787141dc14e9687fb | trgt=0xedf93fa41fc6b410d46ec9a9d0796461d87b7a937a3e0e885963dc24f659c9f8
+  - v3_approve_oscillate_8 | ref=0x8003de78ba082103219a39274b8f4705666d44629cb3b59ad9f53d8f0db90d0e | trgt=0xcb6a9c2a152f6ec88b591c7bb9aeaa8004edc64d0d957feb0d2517c73ac781fd
+  - v3_approve_oscillate_9 | ref=0x295a862a49db03bec4048ad76ebb81f79259d5086734010e38cd2fb5b8944dec | trgt=0x86c05e26bfb6dc37025c3fb7287747256634fcc36a0af367698c8356843c3b2f
+  - v3_approve_oscillate_11 | ref=0xb6f8b9c5f47d3aaebdda77fdbeab3099425f73060f2e2fece1a34b90aa38d445 | trgt=0x4f0e812bd1383ac3550f44f8d734778eb5521dd8c802e19d0abdb6c323af4126
+  - v3_approve_oscillate_12 | ref=0x4012bb23d37e29ffeae5d2364b8c5e48634233ea3088d567350cfc18ac128bd0 | trgt=0xdd5b9f1c03ccfb0bcee1585906f0f9ec08faf9a01653f4a8459620d7eacdaa54
+  - v3_approve_oscillate_13 | ref=0x712412cec9d54fa87873937302be6a4d161ac13ad10fbbe7cc700b28762abb97 | trgt=0xa24eac189be7e0e7f31af0e71a8599c9beb98a7652d52689e23573a93226cffc
+  - v3_approve_oscillate_15 | ref=0xb17050f0cc33b2daf3170c3cf5b47fc8cb35e63a2f7bd560d77fdeca742f6127 | trgt=0xa9c060de051a87d17f587518376df929f3f9526bfa2c3484ce78e5f4dbd70e75
+  - v3_approve_oscillate_16 | ref=0x1cedd302f5beef4f12fe7627660d202d434429b5fc0b77eda260166488c38ff8 | trgt=0xcc3569c510f37a5074eec4f34165ac211253b168b7c3c27ff767c97404c9eab6
+  - v3_approve_oscillate_17 | ref=0x260b4e0b9fc9b1ffeb340c9a9f48dc4f03118e6d5883788e8e0d26612746c500 | trgt=0xa9ed5e1aff8195734747f91fcbf3b8ad7c0e2c662e1c45d665ddf43c1f6787b9
+  - v3_approve_oscillate_18 | ref=0xb0886f0bfb6b610affd95ce903516951e34a933f38717e482a7237104861008b | trgt=0xb549e9e7ea3d269f241c58d9c36b5a7af9251be1661b9ec87ce48ccba6014191
+  - v3_approve_oscillate_20 | ref=0xee7200a4456ecfe16672b1472ab174c8bd0071defae15674645ef873634d0e6d | trgt=0xbfcd078d4057e0cf7b993bc81e808c15adce4a392e87a1a82d48a4353d1ede5c
+
+### BUG-006 — MEDIUM — EXECUTION-MISMATCH
+- Signature: {"findingType":"log_mismatch","divergenceSig":null}
+- Scores: impact=2, exploitability=2, detectability=2, final=8
+- Affected scope: EVM execution, ERC20
+- Potential impact: unknown
+- Affected transactions:
+  - deploy_token | ref=0x3a5352ee4639f7d582bd789b9e0de89ce5e03a5732a4a297ff9cba5a0f837dac | trgt=0xd76ee524c2bfa32938e36f347559b4c41247d469c8d4847fd4d46d6e0847740d
+  - setup_mint_more | ref=0xd6a1dbff00e64df92d8338e56e77d1f451dab83a61dd02f1c683186a878b86e6 | trgt=0xc8daa07728a9339f06392e19045a68a873a1a8b276ab3b75019500baae74d13a
+  - v3_transfer_to_self | ref=0x804d52766fddbe1c59755c1c577384492103859f8bc25a6cc116026dbcdfc104 | trgt=0xea253c077411250c0d97b5224d879b1932b7addd381c341c71c001b80394afe6
+  - v3_burn_mint_burn_sequence | ref=0xca3a4d7442371147d76a4989e910af97b9b4b5cc659e42c25816b0b4240c68cf | trgt=0xcaa988170df0ada74aa7001e25abd5bad1da1837280a16feabba307e6a1f85d9
+  - v3_approve_oscillate_1 | ref=0x3fe45d5a4e1061cda4201a7ecbb84de700420e380082eab22e7ace9518b4eff6 | trgt=0x4c3344eeec03ce54dae47d6befa620dd9b10115c636bfd880a80abb64a29ce6c
+  - v3_approve_oscillate_2 | ref=0xf77d59cc6361727ee9f8560e76067bcfbb9bdcc59ec56de0ee71648b15877511 | trgt=0xf86fa9707834aece0ca5b4c406e12bc85f401479be28b658c71bf23990ec19c3
+  - v3_approve_oscillate_3 | ref=0x9b9cdc6df21981ad086468719bab88cd10956355fa879304d99d08d5f2c32620 | trgt=0xa1edb0b64fee5bd60b8b617fd47fc3d412bf6fe939fca644f9f38b0dba8c58fb
+  - v3_approve_oscillate_4 | ref=0x2aafaabc6437896e8be208d4801bd41a7cae846a8215cb3f806a81a517a56614 | trgt=0xc7861cd1d21735dc37f1ea483cf69d7ef60c31772883accce1aa0ed34f08b6d7
+  - v3_approve_oscillate_5 | ref=0x24105b95525723a834a296b2e47a72c317b453a07ee5674e22c8a3d84705909f | trgt=0x9d0551b2c9dd67f3adaac16f1f992029f2f1d8a6f4d5ff28f0ecb78d204035db
+  - v3_approve_oscillate_6 | ref=0x648369052119172a03157898cb21afdb2ec8c142e4865c1b367da82b0a51e937 | trgt=0x87e134603031a1192d0f8d805e7aab9bc69b5dcc1c5d51f042d17701ef80571b
+  - v3_approve_oscillate_7 | ref=0x2d35a2e836a26f8a8bc321fee2d75fad6f26f3b969161cc787141dc14e9687fb | trgt=0xedf93fa41fc6b410d46ec9a9d0796461d87b7a937a3e0e885963dc24f659c9f8
+  - v3_approve_oscillate_8 | ref=0x8003de78ba082103219a39274b8f4705666d44629cb3b59ad9f53d8f0db90d0e | trgt=0xcb6a9c2a152f6ec88b591c7bb9aeaa8004edc64d0d957feb0d2517c73ac781fd
+  - v3_approve_oscillate_9 | ref=0x295a862a49db03bec4048ad76ebb81f79259d5086734010e38cd2fb5b8944dec | trgt=0x86c05e26bfb6dc37025c3fb7287747256634fcc36a0af367698c8356843c3b2f
+  - v3_approve_oscillate_10 | ref=0x988594d5b88a1f023df9dbf2956a8d62738c0723641051f30d997df1260a02c4 | trgt=0x32417939ff372feb345a0677b1fbdb93a03da43e8d9d1eea969660645fe8c4d8
+  - v3_approve_oscillate_11 | ref=0xb6f8b9c5f47d3aaebdda77fdbeab3099425f73060f2e2fece1a34b90aa38d445 | trgt=0x4f0e812bd1383ac3550f44f8d734778eb5521dd8c802e19d0abdb6c323af4126
+  - v3_approve_oscillate_12 | ref=0x4012bb23d37e29ffeae5d2364b8c5e48634233ea3088d567350cfc18ac128bd0 | trgt=0xdd5b9f1c03ccfb0bcee1585906f0f9ec08faf9a01653f4a8459620d7eacdaa54
+  - v3_approve_oscillate_13 | ref=0x712412cec9d54fa87873937302be6a4d161ac13ad10fbbe7cc700b28762abb97 | trgt=0xa24eac189be7e0e7f31af0e71a8599c9beb98a7652d52689e23573a93226cffc
+  - v3_approve_oscillate_14 | ref=0x03a06e2d580ab1cea89cfe5d808c41f3ff3ee7851d4466c7a90da438d128bb84 | trgt=0x65a336c897f65b48d4e6a0d88adc12baac0cc4b0a173054193a718c1c823225f
+  - v3_approve_oscillate_15 | ref=0xb17050f0cc33b2daf3170c3cf5b47fc8cb35e63a2f7bd560d77fdeca742f6127 | trgt=0xa9c060de051a87d17f587518376df929f3f9526bfa2c3484ce78e5f4dbd70e75
+  - v3_approve_oscillate_16 | ref=0x1cedd302f5beef4f12fe7627660d202d434429b5fc0b77eda260166488c38ff8 | trgt=0xcc3569c510f37a5074eec4f34165ac211253b168b7c3c27ff767c97404c9eab6
+
+### BUG-007 — EXPECTED — EXPECTED-BEHAVIOR
+- Signature: {"findingType":"trace_unavailable","divergenceSig":null}
+- Scores: impact=1, exploitability=2, detectability=2, final=4
+- Affected scope: EVM execution, ERC20
+- Potential impact: unknown
+- Affected transactions:
+  - deploy_token | ref=0x3a5352ee4639f7d582bd789b9e0de89ce5e03a5732a4a297ff9cba5a0f837dac | trgt=0xd76ee524c2bfa32938e36f347559b4c41247d469c8d4847fd4d46d6e0847740d
+  - v3_transfer_to_self | ref=0x804d52766fddbe1c59755c1c577384492103859f8bc25a6cc116026dbcdfc104 | trgt=0xea253c077411250c0d97b5224d879b1932b7addd381c341c71c001b80394afe6
+  - v3_approve_oscillate_0 | ref=0x8fea1159f46079534f91f9dc4475958b4078795abab7c008d5e8e18b2c36cb02 | trgt=0xbd21edcf6e7bc45bc936ee043abbc5a3f25372412a6e97f9180cc4a5c9e3ffe2
+  - v3_approve_oscillate_3 | ref=0x9b9cdc6df21981ad086468719bab88cd10956355fa879304d99d08d5f2c32620 | trgt=0xa1edb0b64fee5bd60b8b617fd47fc3d412bf6fe939fca644f9f38b0dba8c58fb
+  - v3_approve_oscillate_5 | ref=0x24105b95525723a834a296b2e47a72c317b453a07ee5674e22c8a3d84705909f | trgt=0x9d0551b2c9dd67f3adaac16f1f992029f2f1d8a6f4d5ff28f0ecb78d204035db
+  - v3_approve_oscillate_6 | ref=0x648369052119172a03157898cb21afdb2ec8c142e4865c1b367da82b0a51e937 | trgt=0x87e134603031a1192d0f8d805e7aab9bc69b5dcc1c5d51f042d17701ef80571b
+  - v3_approve_oscillate_10 | ref=0x988594d5b88a1f023df9dbf2956a8d62738c0723641051f30d997df1260a02c4 | trgt=0x32417939ff372feb345a0677b1fbdb93a03da43e8d9d1eea969660645fe8c4d8
+  - v3_approve_oscillate_11 | ref=0xb6f8b9c5f47d3aaebdda77fdbeab3099425f73060f2e2fece1a34b90aa38d445 | trgt=0x4f0e812bd1383ac3550f44f8d734778eb5521dd8c802e19d0abdb6c323af4126
+  - v3_approve_oscillate_13 | ref=0x712412cec9d54fa87873937302be6a4d161ac13ad10fbbe7cc700b28762abb97 | trgt=0xa24eac189be7e0e7f31af0e71a8599c9beb98a7652d52689e23573a93226cffc
+  - v3_approve_oscillate_14 | ref=0x03a06e2d580ab1cea89cfe5d808c41f3ff3ee7851d4466c7a90da438d128bb84 | trgt=0x65a336c897f65b48d4e6a0d88adc12baac0cc4b0a173054193a718c1c823225f
+  - v3_approve_oscillate_15 | ref=0xb17050f0cc33b2daf3170c3cf5b47fc8cb35e63a2f7bd560d77fdeca742f6127 | trgt=0xa9c060de051a87d17f587518376df929f3f9526bfa2c3484ce78e5f4dbd70e75
+  - v3_approve_oscillate_18 | ref=0xb0886f0bfb6b610affd95ce903516951e34a933f38717e482a7237104861008b | trgt=0xb549e9e7ea3d269f241c58d9c36b5a7af9251be1661b9ec87ce48ccba6014191
+  - v3_approve_oscillate_19 | ref=0x0d5b69e9e3164f90aaf3dca3dc36683d8e96fa6e034610b8796922473eab2b21 | trgt=0xae86897cf514de34f92a349b967f2520285eddc62b7e2df9162787d16f077643
+  - v3_approve_oscillate_21 | ref=0x42300c557706058a60d027f91fca21b5840b1e83e9a6480b798919afd1adae53 | trgt=0x141b256dd741fda66d0b80e8087d8e6bd668ddef24bd248580f481a04f388679
+  - v3_approve_oscillate_23 | ref=0x52761e461fd58a71c63db6d8eaba90f351d6e74c93386efef9bd4680766c30d4 | trgt=0x2ce29bf29968b03fe1c2199fa6a5f3481e01cff7830b61ddac48cb0381f2868e
+  - v3_mint_to_contract_then_transfer | ref=0xfd7e50bb462d1dfabbf7b1a5684cf6c787ae141eb8b87b9bded497f738f8d3ef | trgt=0x1806b18c397d164af0ddfccc1f105fd3f2e1d41f20f8958579e6cdb489d815f2
+  - v3_small_transfer_18 | ref=0x2b622305d9b752e150d1a2986eee2be13171787574b6f7e562db587ccba10ef9 | trgt=0x0a3fcaebfbd100946ef5c2de2413688697d208cc8c950089547dcfb35a9f7397
+  - v3_small_transfer_21 | ref=0xd343c3d2422809ef3aeadcebac846c5823d4a5760d55aa4a214665082495cfca | trgt=0x411f145e411080b5d453d24ca64ec31f5f3ff52d7911022778cacd2be0ee82d9
+  - v3_small_transfer_27 | ref=0xe4e51ab22a0a371bd1d8ac471d4874397a41fb040e43ae40e7c704b671467809 | trgt=0x68bf8d93e5236649303fb6ac59302e2768c4e630c1d1cc4e8a4e4655f682e921
+  - v3_small_transfer_36 | ref=0xdb9eae192ea2e7671a879f1943743d12caa4271d28cd21a3e643dbb5847b9170 | trgt=0xf77e1e91ea89696102ad23a61ecdbd5cf095aff32244a899e5009a2f71ce3d19
+
+## Reproduction
+- Ensure local nodes are running and expose JSON-RPC + debug trace APIs.
+- Run: `npm run compile`
+- Run: `npm run client:diff:v3`
+- Inputs and ordering are deterministic in the harness source.
+
+## Client Blame Attribution
+- Reference client: REF
+- Any deviation observed is attributed to the non-reference client unless evidence indicates ambiguous causality.
+
+## Security Relevance
+- CRITICAL/HIGH findings may imply execution divergence or state corruption risk between clients.
+- MEDIUM findings often indicate gas or opcode trace divergence; treat as potential DoS / griefing vectors until triaged.
+
+## AI Verdict
+- Overall client safety rating: LOW
+- Readiness for production: Not recommended until triaged
+- Comparison verdict: REF superior (reference) — TRGT deviated
